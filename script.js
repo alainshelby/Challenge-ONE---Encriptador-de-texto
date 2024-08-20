@@ -9,4 +9,15 @@ const mensaje = document.querySelector(".mensaje");
 //'La letra "u" es convertida para "ufat"'
 
 
-let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
+function encriptar(stringEncriptado){
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
+    stringEncriptado = stringEncriptado.toLowerCase()
+
+    for(let i = 0; i <matrizCodigo.length; i++){
+        if(stringEncriptado.includes(matrizCodigo[i][0])){
+            stringEncriptado = stringEncriptado.replaceAll(matrizCodigo[1][0], matrizCodigo[i])
+
+        }
+
+    }
+}
