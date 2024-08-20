@@ -10,4 +10,3 @@ const mensaje = document.querySelector(".mensaje");
 
 
 let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
-console.table(matrizCodigo)
